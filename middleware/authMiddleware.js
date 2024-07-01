@@ -11,18 +11,7 @@ function authenticateJWT(req, res, next) {
   });
 }
 
-// function isAdmin(req, res, next) {
-//   console.log('req.user:', req.user);
-//   if (req.user && req.user.role ==="admin") {
-//      next();
-//   } else {
-//     res
-//       .status(403)
-//       .json({ message: "Access forbidden. Only admin users allowed.",
-//               error:error.message 
-//       });
-//   }
-// }
+
 
 function roleAuthorization(roles) {
     return function(req, res, next) {
